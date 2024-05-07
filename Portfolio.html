@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 500vh;
+        }
+
+        #header {
+            position: sticky;
+            top: 0;
+            height: 10px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .section {
+            padding: 0px;
+            background-color: #f0f0f0;
+            margin-bottom: 20px;
+        }
+
+        #video-container {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            opacity: 1;
+            transition: opacity 2s; 
+            z-index: -1
+        }
+
+        #video-container.fade-out {
+            opacity: 0;
+        }
+
+        .subsection {
+            padding: 10px;
+            background-color: #ccc;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script src="styles\java.js"></script>
+    <div id="header">
+        <h1 style="font-size: 15px; margin-top: 0;">Ed</h1>
+        <!-- You can add navigation links here -->
+    </div>
+    
+    <div class="section">
+        <div id="video-container">
+            <video autoplay loop muted>
+                <source src="/assets/video.mp4" type="video/mp4">
+                browser does not support the video tag.
+            </video>
+        </div>
+        <div class="subsection">
+            <h2>Section 2</h2>
+            <p>This is the content of section 2.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="subsection">
+            <h2>Section 3</h2>
+            <p>This is the content of section 3.</p>
+        </div>
+        <div class="subsection">
+            <h2>Section 4</h2>
+            <p>This is the content of section 4.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="subsection">
+            <h2>Section 5</h2>
+            <p>This is the content of section 5.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Your Website Footer</p>
+    </footer>
+</body>
+</html>
